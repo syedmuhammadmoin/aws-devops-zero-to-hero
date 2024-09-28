@@ -12,3 +12,8 @@ if [ -n "$containerID" ]; then
 else
     echo "No running containers to remove."
 fi
+
+# Remove unused images
+echo "Removing unused Docker images..."
+docker image prune -f
+echo "Unused Docker images have been removed."
