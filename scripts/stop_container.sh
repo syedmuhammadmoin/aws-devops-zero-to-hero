@@ -1,5 +1,4 @@
 #!/bin/bash   
-
 # Get the container IDs of all running containers
 containerID=$(docker ps -q)
 
